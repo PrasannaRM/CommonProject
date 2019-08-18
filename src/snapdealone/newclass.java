@@ -16,6 +16,17 @@ public static void main(String[] args)
 	search.sendKeys("iphone 7");
 	WebElement enter=driver.findElement(By.xpath("//button[@class='searchformButton col-xs-4 rippleGrey']"));
 	enter.click();	
+	String par = driver.getWindowHandle();
+	Set<String> All= driver.getWindowHandles();
+	System.out.println(par+"\n"+All);
+	for(String M:All){
+		if(!M.equals(par)){
+			driver.switchTo().window(M);
+			WebElement crt=driver.findElement(By.id("add-cart-button-id"));
+			crt.click();
+			WebElement chck=driver.findElement(By.xpath("//a[@class='btn marR5']"));
+			chck.click();
+
 
 
 }
