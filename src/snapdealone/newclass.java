@@ -19,8 +19,9 @@ public class newclass {
 		driver.get("https://www.snapdeal.com/");
 		WebElement username=driver. findElement(By.id("og-url"));
 		username.sendKeys("7834893890");
-		
-		
+		System.out.println("Done");
+		WebElement username1=driver. findElement(By.id("mail"));
+		username1.sendKeys("sgs.vkl@gmail.com");
 			
 }
 }
