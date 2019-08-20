@@ -19,6 +19,7 @@ public static void main(String[] args) {
 
 // Thiru adding this line again
 		//Added
+		driver.close();
 }
 
 }
