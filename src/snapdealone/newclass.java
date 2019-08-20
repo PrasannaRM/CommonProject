@@ -28,6 +28,8 @@ public class newclass {
 		TakesScreenshot tk = (TakesScreenshot)driver;
 		File s = tk.getScreenshotAs(OutputType.FILE);
 		System.out.println(s);
+		String url = driver.getCurrentUrl();
+		System.out.println(url);
 		
 			
 }
