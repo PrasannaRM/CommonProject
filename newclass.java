@@ -18,6 +18,7 @@ public static void main(String[] args) {
 		s1.click();
 
 // Thiru adding this line again
+		//Added
 }
 
 }
