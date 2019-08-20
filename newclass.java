@@ -17,7 +17,7 @@ public static void main(String[] args) {
 		WebElement s1=driver.findElement(By.xpath("//span[@class='searchTextSpan']"));
 		s1.click();
 
-
+// Thiru adding this line
 }
 
 }
