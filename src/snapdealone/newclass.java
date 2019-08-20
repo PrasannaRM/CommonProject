@@ -31,9 +31,13 @@ public class newclass {
 		System.out.println(s);
 		String url = driver.getCurrentUrl();
 		System.out.println(url);
+		WebElement cart = driver.findElement(By.xpath("//span[text()='Cart']"));
+		cart.click();
+		
 		driver.close();
-
 			driver.quit();
+			
+			
 
 }
 }
