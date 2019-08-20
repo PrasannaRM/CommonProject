@@ -22,6 +22,7 @@ public class newclass {
 		System.out.println("Done");
 		WebElement username1=driver. findElement(By.id("mail"));
 		username1.sendKeys("sgs.vkl@gmail.com");
-			
+		driver.close();
+		System.out.println("done");
 }
 }
