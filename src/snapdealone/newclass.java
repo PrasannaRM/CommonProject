@@ -1,6 +1,15 @@
 package snapdealone;
 
+<<<<<<< HEAD
+import java.io.File;
+import java.util.Set;
+
+import org.apache.commons.exec.util.DebugUtils;
+=======
+>>>>>>> f548d8282ec253c3598cea19775fce99d4e50e81
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -21,9 +30,11 @@ public class newclass {
 		email.sendKeys("sathishkumar@gmail.com");
 		WebElement username1=driver. findElement(By.id("mail"));
 		username1.sendKeys("sgs.vkl@gmail.com");
+		TakesScreenshot tk = (TakesScreenshot)driver;
+		File s = tk.getScreenshotAs(OutputType.FILE);
+		System.out.println(s);
+		String url = driver.getCurrentUrl();
+		System.out.println(url);
 		driver.close();
-	
-		
-		
 }
 }
