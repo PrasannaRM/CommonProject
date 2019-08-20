@@ -13,6 +13,9 @@ public static void main(String[] args) {
 	d.get("https://www.snapdeal.com/");
 	WebElement t = d.findElement(By.id("inputValEnter"));
 	t.sendKeys("iphone 6");
+	
+	WebElement a= d.findElement(By.xpath("//span[text()='Cart']"));
+		a.click();
 		
 
 
