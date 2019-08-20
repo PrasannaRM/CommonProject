@@ -1,24 +1,20 @@
 package snapdealone;
 
-<<<<<<< HEAD
-import java.io.File;
-import java.util.Set;
-
-import org.apache.commons.exec.util.DebugUtils;
-=======
->>>>>>> f548d8282ec253c3598cea19775fce99d4e50e81
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import java.io.File;
+import java.util.Set;
+
+import org.apache.commons.exec.util.DebugUtils;
 
 public class newclass {
 	public static void main(String[] args) 
 	{
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Shylaja\\eclipse-workspace\\july930final\\driver\\chromedriver76.exe");
-		
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://www.snapdeal.com/login");
 		WebElement username=driver. findElement(By.id("userName"));
@@ -36,5 +32,8 @@ public class newclass {
 		String url = driver.getCurrentUrl();
 		System.out.println(url);
 		driver.close();
+
+			driver.quit();
+
 }
 }
