@@ -17,6 +17,8 @@ public class newclass {
 		System.out.println("Done");
 		WebElement Continue = driver.findElement(By.id("checkUser"));
 		Continue.click();
+		WebElement email = driver.findElement(By.id("j_username_new"));
+		email.sendKeys("sathishkumar@gmail.com");
 		
 			
 }
