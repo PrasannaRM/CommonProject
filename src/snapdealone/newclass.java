@@ -19,7 +19,11 @@ public class newclass {
 		Continue.click();
 		WebElement email = driver.findElement(By.id("j_username_new"));
 		email.sendKeys("sathishkumar@gmail.com");
+		WebElement username1=driver. findElement(By.id("mail"));
+		username1.sendKeys("sgs.vkl@gmail.com");
+		driver.close();
+	
 		
-			
+		
 }
 }
