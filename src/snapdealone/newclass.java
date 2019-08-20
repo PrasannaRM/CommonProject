@@ -21,6 +21,7 @@ public class newclass {
 		WebElement txt = driver.findElement(By.xpath("//header[text()='login/sign up on snapdeal']"));
 		String t = txt.getText();
 		System.out.println(t);
+		System.out.println("Welcome");
 		
 		WebElement username=driver. findElement(By.id("userName"));
 		username.sendKeys("7824027045");
