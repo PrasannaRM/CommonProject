@@ -17,6 +17,11 @@ public class newclass {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Shylaja\\eclipse-workspace\\july930final\\driver\\chromedriver76.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://www.snapdeal.com/login");
+		
+		WebElement txt = driver.findElement(By.xpath("//header[text()='login/sign up on snapdeal']"));
+		String t = txt.getText();
+		System.out.println(t);
+		
 		WebElement username=driver. findElement(By.id("userName"));
 		username.sendKeys("7824027045");
 		System.out.println("Done");
@@ -33,6 +38,8 @@ public class newclass {
 		System.out.println(url);
 		WebElement cart = driver.findElement(By.xpath("//span[text()='Cart']"));
 		cart.click();
+		
+		
 		
 		driver.close();
 			driver.quit();
